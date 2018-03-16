@@ -38,7 +38,7 @@ $(document).ready(function() {
     <div class="boxes" id="first-box">
       <h4>Projects</h4>
       <ul>
-        <li><a href="https://repo.banbrook.net/subversion/">CryptoTracker repo</a></li>
+        <li><a href="https://repo.banbrook.net/subversion/">CryptoTracker source repo</a></li>
       </ul>
     </div>
     </section>
