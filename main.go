@@ -24,8 +24,8 @@ func main() {
 	fs := http.FileServer(http.Dir("asset"))
 	http.Handle("/js/", http.StripPrefix("/js/", fs))
 
-	//http.HandleFunc("/", handler)
-	http.HandleFunc("/count", counter)
+	http.HandleFunc("/", counter)
+	//http.HandleFunc("/count", counter)
 	log.Fatal(http.ListenAndServe("0.0.0.0:80", nil))
 }
 
