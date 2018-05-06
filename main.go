@@ -22,9 +22,9 @@ var count float64
 func main() {
 	//static file handler
 	fs := http.FileServer(http.Dir("asset"))
-	http.Handle("/js/", http.StripPrefix("/js/", fs))
+	http.Handle("/svc1/js/", http.StripPrefix("/js/", fs))
 
-	http.HandleFunc("/", counter)
+	http.HandleFunc("/svc1/", counter)
 	//http.HandleFunc("/count", counter)
 	log.Fatal(http.ListenAndServe("0.0.0.0:80", nil))
 }
